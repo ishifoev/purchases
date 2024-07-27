@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\PurchaseController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,5 +20,6 @@ use App\Http\Controllers\ShopController;
 //});
 
 Route::apiResource('shops', ShopController::class);
+Route::apiResource('purchases', PurchaseController::class);
 
 

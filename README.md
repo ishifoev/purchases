@@ -54,7 +54,8 @@ php artisan key:generate
 
 Обновите следующие переменные в вашем файле .env с вашими данными для подключения к базе данных и другими конфигурациями:
 
-`
+
+````
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -70,7 +71,8 @@ AWS_DEFAULT_REGION=your-region
 AWS_BUCKET=your-bucket-name
 AWS_URL=https://your-bucket-name.s3.amazonaws.com
 
-`
+````
+
 
 Здесь вы можете только обновить данные БД и ваш главный урл насчет aws хранения я не сделал хотя там было не сложно.
 

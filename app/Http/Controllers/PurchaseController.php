@@ -24,7 +24,7 @@ class PurchaseController extends Controller
         ]);
 
         if ($request->hasFile('document_path')) {
-            $path = $request->file('document_path')->store('documents');
+            $path = $request->file('document_path')->store('documents', 'public');
             $request->merge(['document_path' => $path]);
         }
 

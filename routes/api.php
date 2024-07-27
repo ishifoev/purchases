@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\CurrencyRateController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,5 +22,6 @@ use App\Http\Controllers\PurchaseController;
 
 Route::apiResource('shops', ShopController::class);
 Route::apiResource('purchases', PurchaseController::class);
+Route::apiResource('currency-rates', CurrencyRateController::class);
 
 

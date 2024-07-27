@@ -9,7 +9,8 @@ class PurchaseController extends Controller
 {
     public function index()
     {
-        return Purchase::all();
+        $purchases = Purchase::with('shop')->get();
+        return response()->json($purchases);
     }
 
     public function store(Request $request)
